@@ -131,7 +131,7 @@
 
       $("#connect_channel").on('click', function (e) {
         var channel_name = $("#channel_name").val();
-        var wsAddress = "ws://" + "192.168.0.102:3000" + "/webrtc/channel/" + channel_name;
+        var wsAddress = "ws://" + "140.128.101.181:3000" + "/webrtc/channel/" + channel_name;
         console.log("Attempting WebSocket connection to " + wsAddress);
 
         reliableSocket = new WebSocket(wsAddress);
